@@ -16,7 +16,7 @@ describe('Service: anginaModel', function () {
 
     it('should have a status named "To Do"', function () {
       expect(modelService.
-        getStatuses().  
+        getStatuses().
         map(function (status) {
           return status.name;
         })

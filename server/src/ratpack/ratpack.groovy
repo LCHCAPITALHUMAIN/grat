@@ -1,11 +1,9 @@
-import org.ratpackframework.groovy.templating.TemplateRenderer
-
 import static org.ratpackframework.groovy.RatpackScript.ratpack
+
+def indexPages = ["index.html"] as String[]
 
 ratpack {
     handlers {
-        get {
-            get(TemplateRenderer).render "index.html", title: "My Ratpack App"
-        }
+        assets "public", indexPages
     }
 }
