@@ -1,13 +1,13 @@
 grat
 ====
 
-Groovy, Ratpack, AngularJS abd Bootstrap
+Groovy, Ratpack, AngularJS and Bootstrap
 
 An application based on the Lazybones and ngBoilerplate templates.
 
-* The project is laid out as follows:
-'''
-  <proj>
+The project is laid out as follows:
+```
+  grat
     |
     +- client - The AngularJS application
     |   |
@@ -38,12 +38,12 @@ An application based on the Lazybones and ngBoilerplate templates.
                 +- groovy
                      |
                      +- // Spock tests in here!
-'''
+```
 You can start the app with:
-
+```
     cd client
     grunt
     cd ..
     cd server
     ./gradlew run
-
+```
