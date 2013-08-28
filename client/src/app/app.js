@@ -17,7 +17,9 @@ myModule.controller('MainCtrl', function($scope, anginaModel, anginaHelper) {
   $scope.createStory = function() {
     $scope.stories.push({
       title:'New Story',
-      description:'Description pending.'
+      description:'Description pending.',
+      criteria:'Criteria pending.',
+      status:'To Do'
     });
   };
 

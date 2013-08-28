@@ -14,8 +14,7 @@
 </head>
 <body>
   <div ng-controller="MainCtrl">
-    <div class="span4 sidebar-content">
-      <p>{{status}}</p>
+    <div class="col-md-4 sidebar-content">
       <h2>Stories</h2>
       
       <div class="small-12 large-2 columns" ng-repeat="status in statuses">
@@ -28,11 +27,11 @@
         </article>
       </div>
       <br>
-      <a class="btn" ng-click="createStory()">
-        <i class="icon-plus"></i>
-      </a>
+      <button type="button" class="btn btn-default btn-lg" ng-click="createStory()">
+        <span class="glyphicon glyphicon-plus"></span> Add
+      </button>
     </div>
-    <div class="span6 body-content">
+    <div class="col-md-8 body-content">
       <h2>Story</h2>
       <form class="form-horizontal">
         <div class="control-group">
